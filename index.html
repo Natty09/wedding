@@ -409,10 +409,10 @@ body::before {
 .tap-reveal-card.tapped::after { opacity: 0; pointer-events: none; }
 
 /* timeline */
-.timeline-wrap {
+/* .timeline-wrap {
   padding: 0 20px;
   max-width: 520px; margin: 20px auto 0; width: 100%;
-}
+} */
 .tl-title {
   font-family: 'Cinzel', serif;
   font-size: 0.52rem; letter-spacing: 0.28em; text-transform: uppercase;
@@ -502,7 +502,9 @@ body::before {
   margin: 14px 20px 0;
   max-width: 480px; width: calc(100% - 40px);
   align-self: center;
-  border-radius: 4px; overflow: hidden;
+  /* overflow: hidden; */
+  display: block !important;
+  border-radius: 4px;
   border: 1px solid var(--beige-d);
   cursor: pointer;
   box-shadow: 0 8px 24px -8px rgba(78,107,74,0.12);
@@ -747,13 +749,15 @@ body::before {
       </div> -->
 
       <!-- Map -->
-      <div class="map-card" onclick="openMap('Church of St Blaise')">
-        <div class="map-visual">
+      <div class="map-card info-card">
+        <!-- <div class="map-visual">
           <div class="map-pin-txt">📍</div>
           <div class="map-lbl">Church of St. Blaise</div>
           <div class="map-sub-lbl">Tap to open in Maps</div>
-        </div>
-        <div class="map-footer">⛪ &nbsp; Sacred ceremony venue · Arrive early</div>
+        </div> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.5396868593625!2d72.8439467750288!3d19.12783948208742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b629d3ba7b8b%3A0x7203e7f028a759f!2sSt.%20Blaise%20Church!5e0!3m2!1sen!2sin!4v1773403190605!5m2!1sen!2sin" width="430px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     
+        <div class="map-footer" width="430px"><p style="text-align: center;">⛪ &nbsp; Sacred ceremony venue · Arrive early</p></div>
       </div>
     </div>
   </div>
